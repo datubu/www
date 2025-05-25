@@ -1,0 +1,437 @@
+/* 基础样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 1px 10px;
+    background: #f5f7fa;
+}
+
+/* 面包屑导航样式 */
+.breadcrumb {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.breadcrumb a {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 5px 8px;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.breadcrumb a:hover {
+    color: #fff;
+    background: #0066cc;
+    text-decoration: none;
+}
+
+.breadcrumb a:active {
+    transform: scale(0.98);
+}
+
+/* 内容区域样式 */
+#content {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-weight: 600;
+}
+
+h1 {
+    color: #003616;
+    background: linear-gradient(to right, #FF1493, #9b59b6, #3498db, #4CAF50, #FFD700, #FF8000, #FF0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 1.6em;
+}
+
+h2 {
+    color: #00008B;
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: #e74c3c;
+    background: linear-gradient(to right, #e74c3c, #f39c12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 1.1em;
+}
+
+/* 列表项样式 */
+.category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.province-item, .city-item, .county-item {
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    flex: 1 1 120px;
+    text-align: center;
+    a {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: 500;
+        display: block;
+        
+        &:hover {
+            color: #004499;
+            text-decoration: none;
+        }
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+}
+
+/* 徒步线路列表样式 */
+.hiking-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.hiking-item {
+    background: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        border-color: #d1d9e6;
+    }
+}
+
+.hike-header {
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #f0f4f8;
+}
+
+.hike-header h3 {
+    margin: 0 0 10px 0;
+    color: #2d3748;
+    font-size: 1.5em;
+}
+
+.hike-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #4a5568;
+}
+
+.hike-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+    .hike-header {
+        flex-direction: column;
+    }
+    
+    .hike-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .hike-details p {
+        margin: 12px 0;
+    }
+    
+    .hike-links {
+        flex-direction: column;
+    }
+}
+
+.hike-details p {
+    margin: 6px 0;
+    width: 100%;
+}
+
+.hike-intro {
+    margin: 6px 0;
+    width: 100%;
+}
+
+.hike-links {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hike-links a {
+    padding: 5px 10px;
+    background: #edf2f7;
+    border-radius: 4px;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.hike-links a:hover {
+    background: #e2e8f0;
+    color: #2d3748;
+}
+
+.like-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #fff0f0;
+    border-radius: 4px;
+    color: #ff6b6b;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.like-btn:hover {
+    background: #ffebee;
+    transform: scale(1.05);
+}
+
+/* 海拔数据样式 */
+.elevation-max-low {
+    color: #4ecdc4;
+    font-weight: bold;
+}
+
+.elevation-max-medium {
+    color: #feca57;
+    font-weight: bold;
+}
+
+.elevation-max-high {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.elevation-max {
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.elevation-ascent-low {
+    color: #4ecdc4;
+    font-weight: bold;
+}
+
+.elevation-ascent-medium {
+    color: #feca57;
+    font-weight: bold;
+}
+
+.elevation-ascent-high {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.elevation-ascent {
+    font-weight: 500;
+    color: #e74c3c;
+}
+
+.elevation-descent {
+    font-weight: 500;
+    color: #2ecc71;
+}
+
+/* 长度和耗时样式 */
+.length-short {
+    color: #4ecdc4;
+    font-weight: bold;
+}
+
+.length-medium {
+    color: #feca57;
+    font-weight: bold;
+}
+
+.length-long {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.time-short {
+    color: #4ecdc4;
+    font-weight: bold;
+}
+
+.time-medium {
+    color: #feca57;
+    font-weight: bold;
+}
+
+.time-long {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* 难度星级样式 */
+.difficulty-stars {
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.difficulty-1 {
+    color: #FF0000; /* 红 */
+}
+
+.difficulty-2 {
+    color: #ff8000; /* 橙 */
+}
+
+.difficulty-3 {
+    color: #c0b000; /* 暗黄 */
+}
+
+.difficulty-4 {
+    color: #138e00; /* 暗绿 */
+}
+
+.difficulty-5 {
+    color: #005279; /* 青 */
+}
+
+.difficulty-6 {
+    color: #1500ff; /* 蓝 */
+}
+
+.difficulty-7 {
+    color: #8c00ff; /* 紫 */
+}
+
+/* 新增数字颜色样式 */
+.value {
+    font-weight: bold;
+    
+    &.length, &.elevation-ascent, &.time-short {
+        color: #4ecdc4;
+    }
+    
+    &.time, &.time-medium, &.difficulty-stars {
+        color: #feca57;
+    }
+    
+    &.difficulty, &.elevation-max, &.time-long {
+        color: #ff6b6b;
+    }
+    
+    &.elevation-max {
+        color: #9b59b6;
+    }
+    
+    &.elevation-ascent {
+        color: #2ecc71;
+    }
+    
+    &.elevation-descent {
+        color: #e74c3c;
+    }
+}
+
+/* 搜索框样式 */
+.search-box {
+    margin-bottom: 15px;
+    padding: 0.8rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.search-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.search-box input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+}
+
+
+
+/* 页眉页脚样式 */
+header, footer {
+    background: #f5f7fa;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* 全局样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #2c7a7b;
+    text-decoration: underline;
+}
