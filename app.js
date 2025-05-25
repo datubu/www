@@ -39,7 +39,7 @@ function getMaxClass(max) {
 function getDifficultyStars(ascent) {
     const solidStar = '☯';
     // 每500米爬升对应1颗星，最高7颗星
-    const level = Math.min(Math.floor(ascent / 2000) + 1, 7);
+    const level = Math.min(Math.floor(ascent / 3000) + 1, 7);
     const levelNames = ['窥涅境', '净涅境', '碎涅境', '空涅境', '空灵境', '空玄境', '空劫境'];
     const levelColors = ['#红', '#橙', '#黄', '#绿', '#青', '#蓝', '#紫'];
     return `<span class="difficulty-${level}" style="color:${levelColors[level-1]};">${solidStar.repeat(level)}${'〇'.repeat(7 - level)} ${levelNames[level-1]}的${level}劫${levelColors[level-1].replace('#','')}线</span>`;
