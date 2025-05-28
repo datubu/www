@@ -396,39 +396,5 @@ const provincesData = {
                 {name: '休谟和霍维尔小道', length: '440公里', time: '4周', startPoint: '亚斯', endPoint: '阿尔伯里', waypoints: ['科西乌斯科国家公园','雪山峡谷','图穆特河','布林达贝拉山脉'], elevation: {max: 2228, ascent: 12000, descent: 12000}, intro: '重现1824年探险家路线的史诗级穿越，需横渡多条无桥河流。'}
             ]
         }
-    },
-    '南极洲': {
-        '国际探险路线': {
-            '阿蒙森-斯科特路线': [
-                {name: '阿蒙森-斯科特路线', length: '1455公里', time: '50-60天', startPoint: '龙尼冰架', endPoint: '南极点', waypoints: ['沙克尔顿冰川','莱弗里特冰川','极地高原','89度补给站','最后纬度线'], elevation: {max: 3400, ascent: 2800, descent: 0}, intro: '1911年首个抵达南极点的路线，现为科考队常规路线，需拖拽80公斤雪橇穿越冰裂隙区。'}
-            ],
-            '梅西纳路线': [
-                {name: '梅西纳路线', length: '1770公里', time: '60-70天', startPoint: '伯克纳岛', endPoint: '罗斯冰架', waypoints: ['赫尔克里士湾','爱国者丘陵','极地高原','南极点','沙克尔顿冰川'], elevation: {max: 3600, ascent: 3000, descent: 2800}, intro: '横贯南极山脉的经典路线，2018年科林·奥布雷迪单人无补给完成穿越。'}
-            ],
-            '最后一纬度徒步': [
-                {name: '最后一纬度徒步', length: '111公里', time: '7-10天', startPoint: '南纬89度', endPoint: '南极点', waypoints: ['冰原基准点','磁极偏移区','阿蒙森纪念碑'], elevation: {max: 2835, ascent: 300, descent: 0}, intro: '商业探险常见路线，需应对-40℃低温及白化天气现象。'}
-            ],
-            '文森峰大环线': [
-                {name: '文森峰大环线', length: '120公里', time: '12-15天', startPoint: '联合冰川营地', endPoint: '联合冰川营地', waypoints: ['勃兰特纳冰川','文森峰C2营地','极地高原','希普山隘','埃尔斯沃思山脉'], elevation: {max: 4892, ascent: 3500, descent: 3500}, intro: '结合南极最高峰攀登与极地穿越的混合路线。'}
-            ],
-            '沙克尔顿横穿': [
-                {name: '沙克尔顿横穿', length: '1300公里', time: '80天', startPoint: '威德尔海', endPoint: '罗斯海', waypoints: ['赫尔克里士湾','极地高原','南极点','比尔德摩尔冰川','罗斯冰架'], elevation: {max: 3500, ascent: 4000, descent: 3800}, intro: '重现1914年史诗级探险，仅3支队伍成功完成。'}
-            ],
-            '极地高原穿越': [
-                {name: '极地高原穿越', length: '600公里', time: '35天', startPoint: '南极干谷', endPoint: '南极点', waypoints: ['泰勒冰川','维多利亚谷','麦克默多站','极地高原站'], elevation: {max: 3200, ascent: 2500, descent: 500}, intro: '科研人员常规路线，穿越地球上最干燥的麦克默多干谷。'}
-            ],
-            '罗斯冰架环线': [
-                {name: '罗斯冰架环线', length: '800公里', time: '45天', startPoint: '麦克默多站', endPoint: '麦克默多站', waypoints: ['怀特岛','罗斯福岛','伯德极地站','横贯山脉南麓','罗斯岛'], elevation: {max: 500, ascent: 1000, descent: 1000}, intro: '世界最大冰架探险路线，需应对冰裂隙和极端低温。'}
-            ],
-            '威德尔海穿越': [
-                {name: '威德尔海穿越', length: '400公里', time: '25天', startPoint: '阿根廷群岛', endPoint: '赫尔克里士湾', waypoints: ['詹姆斯·罗斯岛','斯诺希尔岛','帝企鹅栖息地','拉森冰架'], elevation: {max: 1200, ascent: 1500, descent: 1000}, intro: '帝企鹅观测路线，需穿越不稳定的海冰区。'}
-            ],
-            '东南极横贯': [
-                {name: '东南极横贯', length: '2000公里', time: '90天', startPoint: '毛德皇后地', endPoint: '威尔克斯地', waypoints: ['新拉扎列夫站','东方站','Dome A','进步站'], elevation: {max: 4093, ascent: 4500, descent: 4000}, intro: '穿越东南极冰盖最高点Dome A的科研路线。'}
-            ],
-            '极点到极点': [
-                {name: '极点到极点', length: '2200公里', time: '100天', startPoint: '南极点', endPoint: '北极点', waypoints: ['罗斯冰架','麦克默多站','新西兰','北冰洋'], elevation: {max: 2835, ascent: 5000, descent: 5000}, intro: '全球唯一跨两极路线，需海陆空混合行进。'}
-            ]
-        }
     }
 };
